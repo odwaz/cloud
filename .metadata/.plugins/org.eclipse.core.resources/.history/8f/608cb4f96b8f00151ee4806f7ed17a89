@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>Register for the Conference</title>
+</head>
+
+<body>
+	<h1>Build your Order here</h1>
+	<p>
+		<img src="logo.gif" width="204" height="131" alt="Conference Logo">
+	<form action="Controller" method="post">
+		<table>
+			<tr>
+				<td valign="top">
+					<table>
+						<tr>
+							<th width="33%" bgcolor="#EEEEEE">Size</th>
+							<th width="66%" bgcolor="#EEEEEE">Ingredients</th>
+						</tr>
+						<tr>
+							<td><input type="radio" name="size" value="small">Small
+								($10.95)</td>
+							<td><input type="checkbox" name="mushrooms">Mushrooms</td>
+						</tr>
+
+						<tr>
+							<td><input type="radio" name="size" value="medium">Medium
+								($14.95)</td>
+							<td><input type="checkbox" name="beef">Beef</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="size" value="large"
+								checked="true">Large ($18.95)</td>
+							<td><input type="checkbox" name="sausage">Sausage</td>
+						</tr>
+						
+						<h1>Build your Order here</h1>
+						<tr>
+							<td align="left">City:</td>
+							<td align="right"><input type="text" size="25"
+								maxlength="25" name="city"></td>
+						</tr>
+						<tr>
+							<td>State:</td>
+							<td><input type="text" size="2" maxlength="2" name="state"></td>
+						</tr>
+						<tr>
+							<td>Zip:</td>
+							<td><input type="text" size="5" maxlength="5" name="zip"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" value="Submit"><input
+								type="Reset"></td>
+						</tr>
+					</table>
+				</td>
+
+				<td width="5%"></td>
+
+				<td valign="top">
+					<table>
+						<tr>
+							<td><h2>Options</h2></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Number of attendees @$ 1000</td>
+							<td><input type="text" size="3" maxlength="3"
+								name="attendees"></td>
+						</tr>
+						<tr>
+							<td>Presentation CD-ROMs @ $50</td>
+							<td><input type="text" size="3" maxlength="3" name="cds"></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="guildmember" value="yes">
+								JSP Guild Member (10% discount)</td>
+						</tr>
+					</table>
+				</td>
+
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

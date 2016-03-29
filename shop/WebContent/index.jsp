@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<title>Eshop</title>
+<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<script src="resources/js/jquery.min.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h2>Welcome</h2>
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Sign In</a></li>
+		</ul>
+
+		<form>
+   <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" placeholder="Enter Name">
+   </div>
+   <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" placeholder="Enter Email Address">
+   </div>
+   <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" placeholder="Enter Password">
+   </div>
+   <button type="submit" class="btn">Submit</button>
+</form>
+	</div>
+</body>
+</html>

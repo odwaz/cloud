@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SimpleSOAPExample/WebContent/wsdl/service.asmx&apos; to &apos;service.wsdl&apos;" description="Rename resource &apos;service.asmx&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/wsdl/service.asmx" name="service.wsdl" stamp="1449552614919" updateReferences="true"/>
+</session>

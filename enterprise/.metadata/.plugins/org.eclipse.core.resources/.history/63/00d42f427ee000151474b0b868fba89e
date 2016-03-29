@@ -1,0 +1,97 @@
+package net.codejava.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.xml.transform.TransformerException;
+
+import com.iveri.enterprise.Enterprise;
+import com.iveri.enterprise.ResultException;
+import com.iveri.enterprise.ResultExceptionAction;
+import com.iveri.enterprise.ResultStatus;
+
+/**
+ * Servlet implementation class transact
+ */
+@WebServlet("/transact")
+public class transact extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private String gateway;
+	private String certificateID;
+	private String applicationID;
+	private String mode;
+       
+	Enterprise e; 
+	 
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+		
+try{
+
+	
+	e = new Enterprise (gateway, certificateID, ResultExceptionAction.RESULT_EXCEPTION_ON_UNSUCCESSFUL);
+	
+	
+		e.prepare("Enquiry", "ThreeDSecureCheckEnrollment", applicationID, mode);
+		e.setAttribute("MerchantReference", String.valueOf(System.currentTimeMillis()));
+		e.setTag("Amount", "100"); // R1.23
+		e.setTag("CCNumber", "4000000000000002");
+		e.setTag("ExpiryDate", "122017");
+	    e.setTag("Currency","USD");				
+		System.out.println(e.getLoggableRequest());
+		
+		
+		ResultStatus resultStatus = e.execute();
+		
+		
+		
+		
+		
+		System.out.println("Result : " + resultStatus.getValue());
+		if (resultStatus == ResultStatus.UNSUCCESSFUL)
+		{
+			// Display the result (eg. DENIED or ApplicationID not configured)
+			System.out.println("Result code : " + e.getResultCode());
+			System.out.println("Result source : " + e.getResultSource());
+			System.out.println("Result description : " + e.getResultDescription());
+		} 
+		else if (resultStatus == ResultStatus.SUCCESSFUL || resultStatus == ResultStatus.SUCCESSFUL_WITH_WARNING)
+		{
+			System.out.println("RequestID : " + e.getAttribute("RequestID"));
+			System.out.println("Acquirer Reference : " + e.getTag("AcquirerReference"));
+			System.out.println("Acquirer Date : " + e.getTag("AcquirerDate"));
+			System.out.println("Acquirer Time : " + e.getTag("AcquirerTime"));
+			System.out.println("Authorisation Code : " + e.getTag("AuthorisationCode"));
+			System.out.println("Amount : " + e.getTag("Amount"));
+			System.out.println("Terminal : " + e.getTag("Terminal"));
+			System.out.println("Transaction Index : " + e.getTag("TransactionIndex"));
+			
+			System.out.println("ThreeDSecure_PARec :" +e.getTag("ThreeDSecure_RequestID"));
+			System.out.println("ThreeDSecure_ACS_URL :"+ e.getTag("ThreeDSecure_ACS_URL"));
+			System.out.println("CardHolderAuthenticationID :"+ e.getTag("CardHolderAuthenticationID"));
+			
+			
+			System.out.println();
+			System.out.println("Response");
+			
+		}
+		
+}
+			
+			catch (ResultException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			try {
+				System.out.println(e.getLoggableResponse());
+			} catch (TransformerException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
+	
+	
+}

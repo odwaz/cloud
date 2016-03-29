@@ -1,0 +1,9 @@
+1447918097818	Rename resource 'register.jsp'
+1447918219833	Rename resource 'auccess.jsp'
+1447919004748	Move 'com.mysql.jdbc_5.1.5.jar' to 'lib'
+1447924077121	Delete element
+1447924097930	Delete element
+1447925043814	Move file
+1447925130739	Move 'logo.gif' to 'WEB-INF'
+1447925391450	Move 'logo.gif' to 'WebContent'
+1447933750143	Move 'jstl-1.2_1.jar' to 'lib'

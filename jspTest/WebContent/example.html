@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title>Iveri Lite</title>
+<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+<LINK rel=3D"shortcut icon" href=3D"http://www.iveri.com/favicon.ico">
+</head>
+
+<body bgcolor="#C0C0C0">
+<form form METHOD="POST" ACTION="https://backoffice.iveri.co.za/Lite/Transactions/New/EasyAuthorise.aspx" id=aForm name=aForm>
+<input id="Lite_Merchant_Applicationid" name="Lite_Merchant_Applicationid" type="hidden" value="{d8b3ae1c-6e8a-41da-8c36-7323242f7e91}" readonly="true">
+
+<input id="Lite_Order_Amount" name="Lite_Order_Amount" type="hidden" value="280502" readonly="true">
+<input type="hidden" name="Lite_Website_Successful_url" value="http://localhost:7070/jspTest/result.jsp" /> <!-- NEED TO BE CHANGED -->
+<input type="hidden" name="Lite_Website_Fail_url" value="http://localhost:7070/jspTest/result.jsp" /> <!-- NEED TO BE CHANGED -->
+<input type="hidden" name="Lite_Website_TryLater_url" value="http://localhost:7070/jspTest/result.jsp" /> <!-- NEED TO BE CHANGED -->
+<input type="hidden" name="Lite_Website_Error_url" value="http://localhost:7070/jspTest/result.jsp" /> <!-- NEED TO BE CHANGED -->
+
+<input id="Lite_Order_LineItems_Product_1" name="Lite_Order_LineItems_Product_1" type="hidden" value="Travel Insurance" readonly="true">
+
+<input id="Lite_Order_LineItems_Quantity_1" name="Lite_Order_LineItems_Quantity_1" type="hidden" value="1" readonly="true">
+
+<input id="Lite_Order_LineItems_Amount_1" name="Lite_Order_LineItems_Amount_1" type="hidden" value="280502" readonly="true">
+
+<input id="Lite_ConsumerOrderID_PreFix" name="Lite_ConsumerOrderID_PreFix" type="hidden" value="DML" readonly="true">
+
+<input id="Ecom_BillTo_Online_Email" name="Ecom_BillTo_Online_Email" type="hidden" value="odwa@iveri.com" readonly="true">
+
+<input id="Ecom_Payment_Card_Protocols" name="Ecom_Payment_Card_Protocols" type="hidden" value="iVeri" readonly="true">
+
+<input id="Ecom_ConsumerOrderID" name="Ecom_ConsumerOrderID" type="hidden" value="AUTOGENERATE">
+
+<input id="Ecom_TransactionComplete" name="Ecom_TransactionComplete" type="hidden" value="" readonly="true">
+<input TYPE="SUBMIT" NAME="Authorise" VALUE="Authorise">&nbsp; &nbsp;  <input TYPE="RESET" NAME="Clear" VALUE="Clear"> 
+
+</form>
+</body>
+</html>

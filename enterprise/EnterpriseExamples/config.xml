@@ -1,0 +1,82 @@
+<XML>
+	<Transaction>
+		<!--
+		<Gateway Value="dev"/> 
+		<UserGroup Value="251810"/> 
+		<UserName Value="Administrator"/> 
+		<Password Value="Qw3rty!"/>
+		-->
+
+		<!--
+		<Mode Value="Test"/> 
+		<CertificateID Value="{A8868E75-32CC-466C-B493-95D18B75973B}"/>
+		<ApplicationID Value="{f73676fb-e51b-4090-987e-c6b79f38edde}"/>
+		-->
+
+		<!--
+		<Mode Value="Live"/> 		
+		<CertificateID Value="{A8868E75-32CC-466C-B493-95D18B75973B}"/>
+		<ApplicationID Value="{e0363d17-1c93-4e13-bd61-51945422c71f}"/>	
+		-->
+
+		<!--
+		<Gateway Value="nedbank"/> 
+		<UserGroup Value="251810"/> 
+		<UserName Value="Administrator"/> 
+		<Password Value="Qw3rty!"/>
+		-->
+		
+		<!-- 
+		<Mode Value="Test"/> 
+		<CertificateID Value="{A8868E75-32CC-466C-B493-95D18B75973B}"/>
+		<ApplicationID Value="{f73676fb-e51b-4090-987e-c6b79f38edde}"/>
+		-->		
+
+		<!--
+		<Mode Value="Live"/> 		
+		<CertificateID Value="{bed5ac0d-dca2-4933-8969-e6e07cc71246}"/>
+		<ApplicationID Value="{5782de0a-8d22-43cc-a191-014e4aaf607d}"/>	
+ 		-->
+ 		
+		<Gateway Value="qa"/> 
+		<UserGroup Value="254494"/> 
+		<UserName Value="Administrator"/> 
+		<Password Value="Qw3rty!"/>
+
+		<!-- 
+		<Mode Value="Test"/> 
+		<CertificateID Value="{8A3B584A-D361-452B-A45C-495F04C48B9D}"/>
+		<ApplicationID Value="{5134ef79-813f-405e-aaa9-b00f234441f5}"/>
+		-->		
+
+		<!-- EMV Certification -->
+		<!--
+		<Mode Value="Live"/> 
+		<CertificateID Value="{8A3B584A-D361-452B-A45C-495F04C48B9D}"/>
+		<ApplicationID Value="{5134ef79-813f-405e-aaa9-b00f234441f5}"/>
+		-->		
+
+		<!-- QA Testing -->
+ 		<Mode Value="Live"/> 
+		<CertificateID Value="{e470206c-796c-42f9-8977-e4cb7525395e}"/>
+		<ApplicationID Value="{47912e9a-e1d4-4852-b71f-b67e9218c81c}"/>
+
+		<CCNumber Value="4242424242424242"/>
+		<Expiry Value="092012"/>
+		<CVV Value="123"/>
+		<Amount Value="100"/>
+		<CashBackAmount Value="0"/>
+		<Currency Value="ZAR"/>
+		<TranType Value="webservice"/> <!-- Value="webservice" OR Value="enterprise" -->
+	</Transaction>
+	<WebService>
+		<Server Value="gateway.iveri.net"/>
+		<WebServicePath Value="/iVeriWebService/Service.asmx"/>
+	</WebService>
+	<Miura>
+	    <ConnectionMethod Value="bluetooth"/> <!-- Value="bluetooth" OR Value="wifi" -->
+	    <BluetoothUrl Value="btspp://2012111504c1:1"/>
+	    <WifiPort Value="6000"/>
+	    <DeviceMake Value="Miura"/>
+	</Miura>
+</XML>

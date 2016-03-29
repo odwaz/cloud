@@ -1,0 +1,42 @@
+package net.codejava.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.xml.transform.TransformerException;
+
+import com.iveri.enterprise.Enterprise;
+import com.iveri.enterprise.ResultException;
+import com.iveri.enterprise.ResultExceptionAction;
+import com.iveri.enterprise.ResultStatus;
+
+/**
+ * Servlet implementation class transact
+ */
+@WebServlet("/transact")
+public class transact extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private String gateway = "hosted";
+	private String certificateID = "";
+	private String applicationID = "";
+	private String mode = "Test";
+
+	Enterprise e;
+
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+
+		String message = "Hello World";
+		request.setAttribute("message", message); // This will be available as
+													// ${message}
+		request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request,
+				response);
+
+	}
+
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>Register for the Conference</title>
+<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<script src="resources/js/jquery.min.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container" >
+		<br></br >
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Sign In</a></li>
+		</ul>
+
+
+	<h2>Welcome, please register for the event</h2>
+	
+	<br></br >
+		<form>
+		
+	
+			<div class="form-group"    style="overflow:auto;">
+				<label>Name</label> <input type="text" class="form-control"
+					placeholder="Enter Name" style="width: 250px">
+			</div>
+			
+			<div class="form-group">
+				<label>Last Name</label> <input type="text" class="form-control"
+					placeholder="Enter last Name" style="width: 250px">
+			</div>
+			<div class="form-group">
+				<label>Address</label> <input type="text" class="form-control"
+					placeholder="Enter  Address" style="width: 250px">
+			</div>
+			<div class="form-group">
+				<label>City</label> <input type="text" class="form-control"
+					placeholder="Enter City" style="width: 250px">
+			</div>
+			<div class="form-group">
+				<label>Province</label> <select name="category" value=""
+					id="single1">
+					<option>Gauteng</option>
+					<option>East Coast</option>
+					<option>West Coasts</option>
+					<option>South Central</option>
+				</select>
+				
+				
+			</div >
+			
+			 <div style="overflow:auto;width:90%;">
+
+            <!-- This is the div that does the trick: -->
+            <div style="width:1200px;">
+
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+            <div style="display:inline-block;width:100px;">some content</div>
+
+            </div>
+
+        </div>
+			<button type="submit" class="btn">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="com.iveri.enterprise.Enterprise"%>
+<%@page import="com.iveri.enterprise.Enterprise"%>
+<%@page import="com.iveri.enterprise.ResultException"%>
+<%@page import=" com.iveri.enterprise.ResultExceptionAction"%>
+<%@page import="com.iveri.enterprise.ResultStatus"%>
+<%
+	String id = request.getParameter("employee");
+	String driverName = "com.mysql.jdbc.Driver";
+	String connectionUrl = "jdbc:mysql://localhost:3306/";
+	String dbName = "dbuser";
+	String userId = "root";
+	String password = "root";
+
+	String gateway = "host"; // Change gateway here if not using iVeriClient config file default
+	String certificateID = "a2120034-9ce1-467e-82e5-e42d349f61d5"; // Enter GUID here if not using iVeriClient config file default
+	String applicationID = "67ccde9f-d03c-480c-a86a-d9d0a7e8aa48"; // Enter GUID here
+	String mode = "Test"; // Change default mode here
+	// Change the Credit Card number here
+	//static String expiry = "1216"; // Change the creditcard expiry date here (MMYY)
+	//static String amount = "123"; // Change the amount in cents, here (1.23)
+	String currency = "USD"; // Change the amount in cents, here (1.23)
+
+	Enterprise e = new Enterprise(gateway, certificateID,
+			ResultExceptionAction.RESULT_EXCEPTION_ON_UNSUCCESSFUL);
+
+	try {
+		Class.forName(driverName);
+	} catch (ClassNotFoundException ex) {
+		ex.printStackTrace();
+	}
+
+	Connection connection = null;
+	Statement statement = null;
+	ResultSet resultSet = null;
+%>
+<h2 align="center">
+	<font><strong>Retrieve data from database in jsp</strong></font>
+</h2>
+<table align="center" cellpadding="5" cellspacing="5" border="1">
+	<tr>
+
+	</tr>
+	<tr bgcolor="#A52A2A">
+		<td><b>id</b></td>
+		<td><b>Name</b></td>
+		<td><b>Address</b></td>
+		<td><b>Language</b></td>
+		<td><b>Year</b></td>
+	</tr>
+	<%
+		try {
+			connection = DriverManager.getConnection(
+					connectionUrl + dbName, userId, password);
+			statement = connection.createStatement();
+			String sql = "SELECT * FROM employee";
+
+			resultSet = statement.executeQuery(sql);
+			while (resultSet.next()) {
+	%>
+	<tr bgcolor="#DEB887">
+
+		<td><%=resultSet.getString("id")%></td>
+		<td><%=resultSet.getString("name")%></td>
+		<td><%=resultSet.getString("address")%></td>
+		<td><%=resultSet.getString("language")%></td>
+		<td><%=resultSet.getString("year")%></td>
+
+	</tr>
+
+	<%
+		}
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	%>
+</table>
+
+</body>
+</html>

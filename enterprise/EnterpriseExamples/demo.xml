@@ -1,0 +1,11 @@
+<XML>
+	<Transaction>
+		<Gateway Value="nedbank"/>
+		<CertificateID Value="{00000000-0000-0000-0000-000000000000}"/>
+		<ApplicationID Value="{00000000-0000-0000-0000-000000000000}"/>
+		<Mode Value="Test"/>
+		<CCNumber Value="4242424242424242"/>
+		<Expiry Value="092009"/>
+		<Amount Value="1"/>
+	</Transaction>
+</XML>

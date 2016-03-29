@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <title>Register for the Conference</title>
+</head>
+
+<body>
+<img src="logo.jpg" alt="Conference Logo">
+<h2>Register for the Conference</h2>
+    <form action="InsertRegistration"
+          method="post">
+    <table>
+        <tr>
+            <td valign="top">
+            <table>
+                <tr>
+                    <td align="left">Name: </td>
+                    <td align="left">
+                        <input type="text" size="25" maxlength="25"
+                               name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">Address: </td>
+                    <td align="right">
+                        <input type="text" size="25" maxlength="25"
+                               name="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">City: </td>
+                    <td align="right">
+                        <input type="text" size="25" maxlength="25"
+                               name="city">
+                    </td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td>
+                        <input type="text" size="2" maxlength="2"
+                               name="state">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zip:</td>
+                    <td>
+                        <input type="text" size="5" maxlength="5"
+                               name="zip">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="Reset">
+                    </td>
+                </tr>
+            </table>
+            </td>
+
+            <td width="5%">
+            </td>
+
+            <td valign="top">
+            <table>
+            <tr>
+                <td><h2>Options</h2></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Number of attendees @$ 1000</td>
+                <td>
+                    <input type="text" size="3" maxlength="3"
+                           name="attendees">
+                </td>
+            </tr>
+            <tr>
+                <td>Presentation CD-ROMs @ $50</td>
+                <td>
+                    <input type="text" size="3" maxlength="3"
+                           name="cds">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox"
+                           name="guildmember" value="yes">
+                    J2EE Guild Member (10% discount)
+                </td>
+            </tr>
+            </table>
+            </td>
+
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

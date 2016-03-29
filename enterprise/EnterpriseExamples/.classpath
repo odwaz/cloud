@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="var" path="IVERI_LIB/iVeriClient.jar"/>
+	<classpathentry exported="true" kind="var" path="IVERI_LIB/commons-lang.jar"/>
+	<classpathentry exported="true" kind="var" path="IVERI_LIB/bluecove.jar"/>
+	<classpathentry exported="true" kind="var" path="IVERI_LIB/iveri.common.router.Miura.jar"/>
+	<classpathentry exported="true" kind="var" path="IVERI_LIB/iveri.common.util.JSON.jar"/>
+	<classpathentry exported="true" kind="var" path="IVERI_LIB/iveri.common.router.MobilePos.jar"/>
+	<classpathentry exported="true" kind="var" path="IVERI_LIB/commons-io.jar"/>
+	<classpathentry kind="lib" path="C:/Users/odwa/Documents/EnterpriseExamples/bluecove.jar"/>
+	<classpathentry kind="lib" path="C:/Users/odwa/Documents/EnterpriseExamples/commons-io.jar"/>
+	<classpathentry kind="lib" path="C:/Users/odwa/Documents/EnterpriseExamples/commons-lang.jar"/>
+	<classpathentry kind="lib" path="C:/Users/odwa/Documents/EnterpriseExamples/iveri.common.message.Gateway.jar"/>
+	<classpathentry kind="lib" path="C:/Users/odwa/Documents/EnterpriseExamples/iveri.common.router.Miura.jar"/>
+	<classpathentry kind="lib" path="C:/Users/odwa/Documents/EnterpriseExamples/iveri.common.router.MobilePos.jar"/>
+	<classpathentry kind="lib" path="C:/Users/odwa/Documents/EnterpriseExamples/iveri.common.util.JSON.jar"/>
+	<classpathentry kind="lib" path="C:/Users/odwa/Documents/EnterpriseExamples/iVeriClient.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

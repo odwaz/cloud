@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ShoppingCart</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Zando">Zando</string>
+    <string name="TakeAlot">TakeAlot</string>
+    <string name="Pop">Pop</string>
+    <string name="Options">Options</string>
+    <string name ="hintList">Enter name of List</string>
+    <string name ="hint">Write Caption</string>
+    <string name="item1">item1</string>
+    <string name="item2">item2</string>
+    <string name="item3">item3</string>
+    <string name="item4">item4</string>
+
+</resources>

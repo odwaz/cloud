@@ -1,0 +1,45 @@
+  <?xml version="1.0" encoding="ISO-8859-1" ?>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%> 
+    <%
+    String userid=(String) session.getAttribute("userid");
+    if(userid==null) userid="";
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Welcome</title>
+</head>
+<body>
+<h2>Configure Your Pizza!</h2>
+<form action="PizzaOrder.jsp" method="post">
+<p>Welcome back : <%=userid%><p>
+
+ <table>
+        <tr>
+          <th width="33%" bgcolor="#EEEEEE">Size</th>
+          <th width="66%" bgcolor="#EEEEEE">Ingredients</th>
+        </tr>
+        <tr>
+          <td><input type="radio" name="size" value="small">Small ($10.95)</td>
+          <td><input type="checkbox" name="mushrooms">Mushrooms</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="size" value="medium">Medium ($14.95)</td>
+          <td><input type="checkbox" name="beef">Beef</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="size" value="large" checked="true">Large ($18.95)</td>
+          <td><input type="checkbox" name="sausage">Sausage</td>
+        </tr>
+      </table>
+      <p>
+        All pizzas include our special mix of fresh cheeses.
+        Extra ingredients cost $1.00 per ingredient.
+      </p>
+      <p><input type="submit" value="Next..." ></p>
+      </form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+Project : Hotel Ordering System.
+
+Softwares : 
+		1> JDK 1.7 & above
+		2> Eclipse Editor
+		3> MySql5
+		4> Apache Tomcat
+
+Libraries:
+		1> JDK Libs
+		2> Mysql Connector Lib
+
+
+Module:
+
+Cook
+		1> Login
+		2> Add Item
+		3> Add Category
+		4> View Orders
+		5> View Bills
+		6> Log out
+
+Table 
+		1>Login
+		2>Place Order
+		3>View Order Status
+		4>View Bills
+		5>Log out
+		
+How to Run :
+		1) start Eclipe
+		2) start mysql query browser
+		3) import database script in mysql
+		4) import project and configure libraries
+		5) Configure Apache in your eclipse
+		6) to run your project through eclipse right click on project name -> Run As -> Run On Server
+
+
+		Now Login As Cook in one browser
+		Now Login As Table in another browser
+		
+
+		--- Thanks --
+			if Any query Contact riz1.ahamed@gmail.com
+
+

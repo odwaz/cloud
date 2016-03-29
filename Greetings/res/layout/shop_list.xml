@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="@drawable/background">
+
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="50sp"
+        android:text="SHOPS"
+        android:textColor="#FFFFFF" />
+    
+    
+    <CheckBox
+        android:id="@+id/chkIos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Zando" />
+		
+    <CheckBox
+        android:id="@+id/chkAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="@string/TakeAlot" />
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/chkWindows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="@string/Pop" />
+
+   
+    
+      <EditText
+        android:id="@+id/mytextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Caption" >
+
+        <requestFocus />
+    </EditText>
+    
+       <Button
+        android:id="@+id/btnGoOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Options" />
+
+</LinearLayout>

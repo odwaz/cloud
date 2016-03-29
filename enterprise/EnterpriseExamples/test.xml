@@ -1,0 +1,24 @@
+<XML>
+	<Transaction>
+		<Gateway Value="dev"/>
+		<CertificateID Value="{73694EB5-CD36-435C-BB17-30BB1ECD677B}"/>
+		<ApplicationID Value="{8B2101C2-88A2-11D4-BCCF-0000E884F861}"/>
+		<Mode Value="Test"/>
+		<CCNumber Value="4242424242424242"/>
+		<Expiry Value="092009"/>
+		<Amount Value="1"/>
+	</Transaction>
+</XML>
+
+
+<XML>
+	<Transaction>
+		<Gateway Value="nedbank"/>
+		<CertificateID Value="{00000000-0000-0000-0000-000000000000}"/>
+		<ApplicationID Value="{00000000-0000-0000-0000-000000000000}"/>
+		<Mode Value="Test"/>
+		<CCNumber Value="4242424242424242"/>
+		<Expiry Value="092009"/>
+		<Amount Value="1"/>
+	</Transaction>
+</XML>
